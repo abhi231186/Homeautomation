@@ -31,7 +31,7 @@ var (
 
 // AdvancedHomeAutomationMetaData contains all meta data concerning the AdvancedHomeAutomation contract.
 var AdvancedHomeAutomationMetaData = &bind.MetaData{
-	ABI: "[{\"type\":\"constructor\",\"inputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"ROOM_OWNER_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"SUPER_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"accessRules\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"fromTimestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"toTimestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"isActive\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"addSuperAdmin\",\"inputs\":[{\"name\":\"newAdmin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"createRoom\",\"inputs\":[{\"name\":\"_name\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"_ip\",\"type\":\"string\",\"internalType\":\"string\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"defineDevice\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_name\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"_pin\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_type\",\"type\":\"uint8\",\"internalType\":\"enumAdvancedHomeAutomation.DeviceType\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"getRoleAdmin\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"grantRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"grantRoomAccess\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_user\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_start\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_end\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"isOwner\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"hasRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"operateDevice\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_deviceId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_value\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"renounceRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"callerConfirmation\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"revokeRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"roomCount\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rooms\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"name\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"espIP\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"deviceCount\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"exists\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"supportsInterface\",\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\",\"internalType\":\"bytes4\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"transferSuperAdmin\",\"inputs\":[{\"name\":\"to\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"AccessUpdated\",\"inputs\":[{\"name\":\"roomId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"indexed\":false,\"internalType\":\"address\"},{\"name\":\"from\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"to\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleAdminChanged\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"previousAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"newAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleGranted\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleRevoked\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleTransferred\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"from\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"to\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"StateChanged\",\"inputs\":[{\"name\":\"roomId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"deviceId\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"newValue\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AccessControlBadConfirmation\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AccessControlUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"neededRole\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]}]",
+	ABI: "[{\"type\":\"constructor\",\"inputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"DEFAULT_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"GUEST_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"ROOM_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"SUPER_ADMIN_ROLE\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"accessRules\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"fromTimestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"toTimestamp\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"isActive\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"addSuperAdmin\",\"inputs\":[{\"name\":\"newAdmin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"createRoom\",\"inputs\":[{\"name\":\"_name\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"_ip\",\"type\":\"string\",\"internalType\":\"string\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"defineDevice\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_name\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"_pin\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_type\",\"type\":\"uint8\",\"internalType\":\"enumAdvancedHomeAutomation.DeviceType\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"getDeviceStatus\",\"inputs\":[{\"name\":\"_rId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_dId\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"getRoleAdmin\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"grantAccess\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_user\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_start\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_end\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"grantRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"hasRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"operateDevice\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_deviceId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_value\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"removeSuperAdmin\",\"inputs\":[{\"name\":\"admin\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"renounceRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"callerConfirmation\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"revokeAccess\",\"inputs\":[{\"name\":\"_roomId\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"_user\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"_role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"revokeRole\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"}],\"outputs\":[],\"stateMutability\":\"nonpayable\"},{\"type\":\"function\",\"name\":\"roomCount\",\"inputs\":[],\"outputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"rooms\",\"inputs\":[{\"name\":\"\",\"type\":\"uint256\",\"internalType\":\"uint256\"}],\"outputs\":[{\"name\":\"name\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"espIP\",\"type\":\"string\",\"internalType\":\"string\"},{\"name\":\"deviceCount\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"exists\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"supportsInterface\",\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\",\"internalType\":\"bytes4\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"event\",\"name\":\"AccessUpdated\",\"inputs\":[{\"name\":\"roomId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"user\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"from\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"to\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":false,\"internalType\":\"bytes32\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleAdminChanged\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"previousAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"newAdminRole\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleGranted\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoleRevoked\",\"inputs\":[{\"name\":\"role\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"account\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"},{\"name\":\"sender\",\"type\":\"address\",\"indexed\":true,\"internalType\":\"address\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"RoomCreated\",\"inputs\":[{\"name\":\"roomId\",\"type\":\"uint256\",\"indexed\":true,\"internalType\":\"uint256\"},{\"name\":\"name\",\"type\":\"string\",\"indexed\":false,\"internalType\":\"string\"}],\"anonymous\":false},{\"type\":\"event\",\"name\":\"StateChanged\",\"inputs\":[{\"name\":\"roomId\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"deviceId\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"},{\"name\":\"newValue\",\"type\":\"uint256\",\"indexed\":false,\"internalType\":\"uint256\"}],\"anonymous\":false},{\"type\":\"error\",\"name\":\"AccessControlBadConfirmation\",\"inputs\":[]},{\"type\":\"error\",\"name\":\"AccessControlUnauthorizedAccount\",\"inputs\":[{\"name\":\"account\",\"type\":\"address\",\"internalType\":\"address\"},{\"name\":\"neededRole\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}]}]",
 }
 
 // AdvancedHomeAutomationABI is the input ABI used to generate the binding from.
@@ -211,12 +211,12 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationCallerSession) DEFAULTADMIN
 	return _AdvancedHomeAutomation.Contract.DEFAULTADMINROLE(&_AdvancedHomeAutomation.CallOpts)
 }
 
-// ROOMOWNERROLE is a free data retrieval call binding the contract method 0xb009e3b8.
+// GUESTROLE is a free data retrieval call binding the contract method 0x5c7e8863.
 //
-// Solidity: function ROOM_OWNER_ROLE() view returns(bytes32)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationCaller) ROOMOWNERROLE(opts *bind.CallOpts) ([32]byte, error) {
+// Solidity: function GUEST_ROLE() view returns(bytes32)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationCaller) GUESTROLE(opts *bind.CallOpts) ([32]byte, error) {
 	var out []interface{}
-	err := _AdvancedHomeAutomation.contract.Call(opts, &out, "ROOM_OWNER_ROLE")
+	err := _AdvancedHomeAutomation.contract.Call(opts, &out, "GUEST_ROLE")
 
 	if err != nil {
 		return *new([32]byte), err
@@ -228,18 +228,49 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationCaller) ROOMOWNERROLE(opts 
 
 }
 
-// ROOMOWNERROLE is a free data retrieval call binding the contract method 0xb009e3b8.
+// GUESTROLE is a free data retrieval call binding the contract method 0x5c7e8863.
 //
-// Solidity: function ROOM_OWNER_ROLE() view returns(bytes32)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) ROOMOWNERROLE() ([32]byte, error) {
-	return _AdvancedHomeAutomation.Contract.ROOMOWNERROLE(&_AdvancedHomeAutomation.CallOpts)
+// Solidity: function GUEST_ROLE() view returns(bytes32)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) GUESTROLE() ([32]byte, error) {
+	return _AdvancedHomeAutomation.Contract.GUESTROLE(&_AdvancedHomeAutomation.CallOpts)
 }
 
-// ROOMOWNERROLE is a free data retrieval call binding the contract method 0xb009e3b8.
+// GUESTROLE is a free data retrieval call binding the contract method 0x5c7e8863.
 //
-// Solidity: function ROOM_OWNER_ROLE() view returns(bytes32)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationCallerSession) ROOMOWNERROLE() ([32]byte, error) {
-	return _AdvancedHomeAutomation.Contract.ROOMOWNERROLE(&_AdvancedHomeAutomation.CallOpts)
+// Solidity: function GUEST_ROLE() view returns(bytes32)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationCallerSession) GUESTROLE() ([32]byte, error) {
+	return _AdvancedHomeAutomation.Contract.GUESTROLE(&_AdvancedHomeAutomation.CallOpts)
+}
+
+// ROOMADMINROLE is a free data retrieval call binding the contract method 0x8437db89.
+//
+// Solidity: function ROOM_ADMIN_ROLE() view returns(bytes32)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationCaller) ROOMADMINROLE(opts *bind.CallOpts) ([32]byte, error) {
+	var out []interface{}
+	err := _AdvancedHomeAutomation.contract.Call(opts, &out, "ROOM_ADMIN_ROLE")
+
+	if err != nil {
+		return *new([32]byte), err
+	}
+
+	out0 := *abi.ConvertType(out[0], new([32]byte)).(*[32]byte)
+
+	return out0, err
+
+}
+
+// ROOMADMINROLE is a free data retrieval call binding the contract method 0x8437db89.
+//
+// Solidity: function ROOM_ADMIN_ROLE() view returns(bytes32)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) ROOMADMINROLE() ([32]byte, error) {
+	return _AdvancedHomeAutomation.Contract.ROOMADMINROLE(&_AdvancedHomeAutomation.CallOpts)
+}
+
+// ROOMADMINROLE is a free data retrieval call binding the contract method 0x8437db89.
+//
+// Solidity: function ROOM_ADMIN_ROLE() view returns(bytes32)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationCallerSession) ROOMADMINROLE() ([32]byte, error) {
+	return _AdvancedHomeAutomation.Contract.ROOMADMINROLE(&_AdvancedHomeAutomation.CallOpts)
 }
 
 // SUPERADMINROLE is a free data retrieval call binding the contract method 0x4460bdd6.
@@ -321,6 +352,37 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationCallerSession) AccessRules(
 	IsActive      bool
 }, error) {
 	return _AdvancedHomeAutomation.Contract.AccessRules(&_AdvancedHomeAutomation.CallOpts, arg0, arg1)
+}
+
+// GetDeviceStatus is a free data retrieval call binding the contract method 0x1d16f5c9.
+//
+// Solidity: function getDeviceStatus(uint256 _rId, uint256 _dId) view returns(uint256)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationCaller) GetDeviceStatus(opts *bind.CallOpts, _rId *big.Int, _dId *big.Int) (*big.Int, error) {
+	var out []interface{}
+	err := _AdvancedHomeAutomation.contract.Call(opts, &out, "getDeviceStatus", _rId, _dId)
+
+	if err != nil {
+		return *new(*big.Int), err
+	}
+
+	out0 := *abi.ConvertType(out[0], new(*big.Int)).(**big.Int)
+
+	return out0, err
+
+}
+
+// GetDeviceStatus is a free data retrieval call binding the contract method 0x1d16f5c9.
+//
+// Solidity: function getDeviceStatus(uint256 _rId, uint256 _dId) view returns(uint256)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) GetDeviceStatus(_rId *big.Int, _dId *big.Int) (*big.Int, error) {
+	return _AdvancedHomeAutomation.Contract.GetDeviceStatus(&_AdvancedHomeAutomation.CallOpts, _rId, _dId)
+}
+
+// GetDeviceStatus is a free data retrieval call binding the contract method 0x1d16f5c9.
+//
+// Solidity: function getDeviceStatus(uint256 _rId, uint256 _dId) view returns(uint256)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationCallerSession) GetDeviceStatus(_rId *big.Int, _dId *big.Int) (*big.Int, error) {
+	return _AdvancedHomeAutomation.Contract.GetDeviceStatus(&_AdvancedHomeAutomation.CallOpts, _rId, _dId)
 }
 
 // GetRoleAdmin is a free data retrieval call binding the contract method 0x248a9ca3.
@@ -565,6 +627,27 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) DefineDe
 	return _AdvancedHomeAutomation.Contract.DefineDevice(&_AdvancedHomeAutomation.TransactOpts, _roomId, _name, _pin, _type)
 }
 
+// GrantAccess is a paid mutator transaction binding the contract method 0xdf399508.
+//
+// Solidity: function grantAccess(uint256 _roomId, address _user, uint256 _start, uint256 _end, bytes32 _role) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactor) GrantAccess(opts *bind.TransactOpts, _roomId *big.Int, _user common.Address, _start *big.Int, _end *big.Int, _role [32]byte) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.contract.Transact(opts, "grantAccess", _roomId, _user, _start, _end, _role)
+}
+
+// GrantAccess is a paid mutator transaction binding the contract method 0xdf399508.
+//
+// Solidity: function grantAccess(uint256 _roomId, address _user, uint256 _start, uint256 _end, bytes32 _role) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) GrantAccess(_roomId *big.Int, _user common.Address, _start *big.Int, _end *big.Int, _role [32]byte) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.Contract.GrantAccess(&_AdvancedHomeAutomation.TransactOpts, _roomId, _user, _start, _end, _role)
+}
+
+// GrantAccess is a paid mutator transaction binding the contract method 0xdf399508.
+//
+// Solidity: function grantAccess(uint256 _roomId, address _user, uint256 _start, uint256 _end, bytes32 _role) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) GrantAccess(_roomId *big.Int, _user common.Address, _start *big.Int, _end *big.Int, _role [32]byte) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.Contract.GrantAccess(&_AdvancedHomeAutomation.TransactOpts, _roomId, _user, _start, _end, _role)
+}
+
 // GrantRole is a paid mutator transaction binding the contract method 0x2f2ff15d.
 //
 // Solidity: function grantRole(bytes32 role, address account) returns()
@@ -584,27 +667,6 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) GrantRole(role [32
 // Solidity: function grantRole(bytes32 role, address account) returns()
 func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) GrantRole(role [32]byte, account common.Address) (*types.Transaction, error) {
 	return _AdvancedHomeAutomation.Contract.GrantRole(&_AdvancedHomeAutomation.TransactOpts, role, account)
-}
-
-// GrantRoomAccess is a paid mutator transaction binding the contract method 0xaaab15dd.
-//
-// Solidity: function grantRoomAccess(uint256 _roomId, address _user, uint256 _start, uint256 _end, bool isOwner) returns()
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactor) GrantRoomAccess(opts *bind.TransactOpts, _roomId *big.Int, _user common.Address, _start *big.Int, _end *big.Int, isOwner bool) (*types.Transaction, error) {
-	return _AdvancedHomeAutomation.contract.Transact(opts, "grantRoomAccess", _roomId, _user, _start, _end, isOwner)
-}
-
-// GrantRoomAccess is a paid mutator transaction binding the contract method 0xaaab15dd.
-//
-// Solidity: function grantRoomAccess(uint256 _roomId, address _user, uint256 _start, uint256 _end, bool isOwner) returns()
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) GrantRoomAccess(_roomId *big.Int, _user common.Address, _start *big.Int, _end *big.Int, isOwner bool) (*types.Transaction, error) {
-	return _AdvancedHomeAutomation.Contract.GrantRoomAccess(&_AdvancedHomeAutomation.TransactOpts, _roomId, _user, _start, _end, isOwner)
-}
-
-// GrantRoomAccess is a paid mutator transaction binding the contract method 0xaaab15dd.
-//
-// Solidity: function grantRoomAccess(uint256 _roomId, address _user, uint256 _start, uint256 _end, bool isOwner) returns()
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) GrantRoomAccess(_roomId *big.Int, _user common.Address, _start *big.Int, _end *big.Int, isOwner bool) (*types.Transaction, error) {
-	return _AdvancedHomeAutomation.Contract.GrantRoomAccess(&_AdvancedHomeAutomation.TransactOpts, _roomId, _user, _start, _end, isOwner)
 }
 
 // OperateDevice is a paid mutator transaction binding the contract method 0x4115369e.
@@ -628,6 +690,27 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) OperateD
 	return _AdvancedHomeAutomation.Contract.OperateDevice(&_AdvancedHomeAutomation.TransactOpts, _roomId, _deviceId, _value)
 }
 
+// RemoveSuperAdmin is a paid mutator transaction binding the contract method 0x4902e4aa.
+//
+// Solidity: function removeSuperAdmin(address admin) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactor) RemoveSuperAdmin(opts *bind.TransactOpts, admin common.Address) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.contract.Transact(opts, "removeSuperAdmin", admin)
+}
+
+// RemoveSuperAdmin is a paid mutator transaction binding the contract method 0x4902e4aa.
+//
+// Solidity: function removeSuperAdmin(address admin) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) RemoveSuperAdmin(admin common.Address) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.Contract.RemoveSuperAdmin(&_AdvancedHomeAutomation.TransactOpts, admin)
+}
+
+// RemoveSuperAdmin is a paid mutator transaction binding the contract method 0x4902e4aa.
+//
+// Solidity: function removeSuperAdmin(address admin) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) RemoveSuperAdmin(admin common.Address) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.Contract.RemoveSuperAdmin(&_AdvancedHomeAutomation.TransactOpts, admin)
+}
+
 // RenounceRole is a paid mutator transaction binding the contract method 0x36568abe.
 //
 // Solidity: function renounceRole(bytes32 role, address callerConfirmation) returns()
@@ -649,6 +732,27 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) Renounce
 	return _AdvancedHomeAutomation.Contract.RenounceRole(&_AdvancedHomeAutomation.TransactOpts, role, callerConfirmation)
 }
 
+// RevokeAccess is a paid mutator transaction binding the contract method 0x6af54a26.
+//
+// Solidity: function revokeAccess(uint256 _roomId, address _user, bytes32 _role) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactor) RevokeAccess(opts *bind.TransactOpts, _roomId *big.Int, _user common.Address, _role [32]byte) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.contract.Transact(opts, "revokeAccess", _roomId, _user, _role)
+}
+
+// RevokeAccess is a paid mutator transaction binding the contract method 0x6af54a26.
+//
+// Solidity: function revokeAccess(uint256 _roomId, address _user, bytes32 _role) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) RevokeAccess(_roomId *big.Int, _user common.Address, _role [32]byte) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.Contract.RevokeAccess(&_AdvancedHomeAutomation.TransactOpts, _roomId, _user, _role)
+}
+
+// RevokeAccess is a paid mutator transaction binding the contract method 0x6af54a26.
+//
+// Solidity: function revokeAccess(uint256 _roomId, address _user, bytes32 _role) returns()
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) RevokeAccess(_roomId *big.Int, _user common.Address, _role [32]byte) (*types.Transaction, error) {
+	return _AdvancedHomeAutomation.Contract.RevokeAccess(&_AdvancedHomeAutomation.TransactOpts, _roomId, _user, _role)
+}
+
 // RevokeRole is a paid mutator transaction binding the contract method 0xd547741f.
 //
 // Solidity: function revokeRole(bytes32 role, address account) returns()
@@ -668,27 +772,6 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) RevokeRole(role [3
 // Solidity: function revokeRole(bytes32 role, address account) returns()
 func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) RevokeRole(role [32]byte, account common.Address) (*types.Transaction, error) {
 	return _AdvancedHomeAutomation.Contract.RevokeRole(&_AdvancedHomeAutomation.TransactOpts, role, account)
-}
-
-// TransferSuperAdmin is a paid mutator transaction binding the contract method 0x0c6dd9fd.
-//
-// Solidity: function transferSuperAdmin(address to) returns()
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactor) TransferSuperAdmin(opts *bind.TransactOpts, to common.Address) (*types.Transaction, error) {
-	return _AdvancedHomeAutomation.contract.Transact(opts, "transferSuperAdmin", to)
-}
-
-// TransferSuperAdmin is a paid mutator transaction binding the contract method 0x0c6dd9fd.
-//
-// Solidity: function transferSuperAdmin(address to) returns()
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationSession) TransferSuperAdmin(to common.Address) (*types.Transaction, error) {
-	return _AdvancedHomeAutomation.Contract.TransferSuperAdmin(&_AdvancedHomeAutomation.TransactOpts, to)
-}
-
-// TransferSuperAdmin is a paid mutator transaction binding the contract method 0x0c6dd9fd.
-//
-// Solidity: function transferSuperAdmin(address to) returns()
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationTransactorSession) TransferSuperAdmin(to common.Address) (*types.Transaction, error) {
-	return _AdvancedHomeAutomation.Contract.TransferSuperAdmin(&_AdvancedHomeAutomation.TransactOpts, to)
 }
 
 // AdvancedHomeAutomationAccessUpdatedIterator is returned from FilterAccessUpdated and is used to iterate over the raw logs and unpacked data for AccessUpdated events raised by the AdvancedHomeAutomation contract.
@@ -764,37 +847,46 @@ type AdvancedHomeAutomationAccessUpdated struct {
 	User   common.Address
 	From   *big.Int
 	To     *big.Int
+	Role   [32]byte
 	Raw    types.Log // Blockchain specific contextual infos
 }
 
-// FilterAccessUpdated is a free log retrieval operation binding the contract event 0x194e01382f1246fb561dfe1100773dcd816e9a8b500f326675d4f18a2a1a8ab7.
+// FilterAccessUpdated is a free log retrieval operation binding the contract event 0xc761ffe24f37f69b18d4ab526796cab2020e38194ecc4598faa2c6ef62204e26.
 //
-// Solidity: event AccessUpdated(uint256 indexed roomId, address user, uint256 from, uint256 to)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterAccessUpdated(opts *bind.FilterOpts, roomId []*big.Int) (*AdvancedHomeAutomationAccessUpdatedIterator, error) {
+// Solidity: event AccessUpdated(uint256 indexed roomId, address indexed user, uint256 from, uint256 to, bytes32 role)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterAccessUpdated(opts *bind.FilterOpts, roomId []*big.Int, user []common.Address) (*AdvancedHomeAutomationAccessUpdatedIterator, error) {
 
 	var roomIdRule []interface{}
 	for _, roomIdItem := range roomId {
 		roomIdRule = append(roomIdRule, roomIdItem)
 	}
+	var userRule []interface{}
+	for _, userItem := range user {
+		userRule = append(userRule, userItem)
+	}
 
-	logs, sub, err := _AdvancedHomeAutomation.contract.FilterLogs(opts, "AccessUpdated", roomIdRule)
+	logs, sub, err := _AdvancedHomeAutomation.contract.FilterLogs(opts, "AccessUpdated", roomIdRule, userRule)
 	if err != nil {
 		return nil, err
 	}
 	return &AdvancedHomeAutomationAccessUpdatedIterator{contract: _AdvancedHomeAutomation.contract, event: "AccessUpdated", logs: logs, sub: sub}, nil
 }
 
-// WatchAccessUpdated is a free log subscription operation binding the contract event 0x194e01382f1246fb561dfe1100773dcd816e9a8b500f326675d4f18a2a1a8ab7.
+// WatchAccessUpdated is a free log subscription operation binding the contract event 0xc761ffe24f37f69b18d4ab526796cab2020e38194ecc4598faa2c6ef62204e26.
 //
-// Solidity: event AccessUpdated(uint256 indexed roomId, address user, uint256 from, uint256 to)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchAccessUpdated(opts *bind.WatchOpts, sink chan<- *AdvancedHomeAutomationAccessUpdated, roomId []*big.Int) (event.Subscription, error) {
+// Solidity: event AccessUpdated(uint256 indexed roomId, address indexed user, uint256 from, uint256 to, bytes32 role)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchAccessUpdated(opts *bind.WatchOpts, sink chan<- *AdvancedHomeAutomationAccessUpdated, roomId []*big.Int, user []common.Address) (event.Subscription, error) {
 
 	var roomIdRule []interface{}
 	for _, roomIdItem := range roomId {
 		roomIdRule = append(roomIdRule, roomIdItem)
 	}
+	var userRule []interface{}
+	for _, userItem := range user {
+		userRule = append(userRule, userItem)
+	}
 
-	logs, sub, err := _AdvancedHomeAutomation.contract.WatchLogs(opts, "AccessUpdated", roomIdRule)
+	logs, sub, err := _AdvancedHomeAutomation.contract.WatchLogs(opts, "AccessUpdated", roomIdRule, userRule)
 	if err != nil {
 		return nil, err
 	}
@@ -826,9 +918,9 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchAccessUpdate
 	}), nil
 }
 
-// ParseAccessUpdated is a log parse operation binding the contract event 0x194e01382f1246fb561dfe1100773dcd816e9a8b500f326675d4f18a2a1a8ab7.
+// ParseAccessUpdated is a log parse operation binding the contract event 0xc761ffe24f37f69b18d4ab526796cab2020e38194ecc4598faa2c6ef62204e26.
 //
-// Solidity: event AccessUpdated(uint256 indexed roomId, address user, uint256 from, uint256 to)
+// Solidity: event AccessUpdated(uint256 indexed roomId, address indexed user, uint256 from, uint256 to, bytes32 role)
 func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) ParseAccessUpdated(log types.Log) (*AdvancedHomeAutomationAccessUpdated, error) {
 	event := new(AdvancedHomeAutomationAccessUpdated)
 	if err := _AdvancedHomeAutomation.contract.UnpackLog(event, "AccessUpdated", log); err != nil {
@@ -1324,9 +1416,9 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) ParseRoleRevoked(
 	return event, nil
 }
 
-// AdvancedHomeAutomationRoleTransferredIterator is returned from FilterRoleTransferred and is used to iterate over the raw logs and unpacked data for RoleTransferred events raised by the AdvancedHomeAutomation contract.
-type AdvancedHomeAutomationRoleTransferredIterator struct {
-	Event *AdvancedHomeAutomationRoleTransferred // Event containing the contract specifics and raw log
+// AdvancedHomeAutomationRoomCreatedIterator is returned from FilterRoomCreated and is used to iterate over the raw logs and unpacked data for RoomCreated events raised by the AdvancedHomeAutomation contract.
+type AdvancedHomeAutomationRoomCreatedIterator struct {
+	Event *AdvancedHomeAutomationRoomCreated // Event containing the contract specifics and raw log
 
 	contract *bind.BoundContract // Generic contract to use for unpacking event data
 	event    string              // Event name to use for unpacking event data
@@ -1340,7 +1432,7 @@ type AdvancedHomeAutomationRoleTransferredIterator struct {
 // Next advances the iterator to the subsequent event, returning whether there
 // are any more events found. In case of a retrieval or parsing error, false is
 // returned and Error() can be queried for the exact failure.
-func (it *AdvancedHomeAutomationRoleTransferredIterator) Next() bool {
+func (it *AdvancedHomeAutomationRoomCreatedIterator) Next() bool {
 	// If the iterator failed, stop iterating
 	if it.fail != nil {
 		return false
@@ -1349,7 +1441,7 @@ func (it *AdvancedHomeAutomationRoleTransferredIterator) Next() bool {
 	if it.done {
 		select {
 		case log := <-it.logs:
-			it.Event = new(AdvancedHomeAutomationRoleTransferred)
+			it.Event = new(AdvancedHomeAutomationRoomCreated)
 			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
 				it.fail = err
 				return false
@@ -1364,7 +1456,7 @@ func (it *AdvancedHomeAutomationRoleTransferredIterator) Next() bool {
 	// Iterator still in progress, wait for either a data or an error event
 	select {
 	case log := <-it.logs:
-		it.Event = new(AdvancedHomeAutomationRoleTransferred)
+		it.Event = new(AdvancedHomeAutomationRoomCreated)
 		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
 			it.fail = err
 			return false
@@ -1380,69 +1472,52 @@ func (it *AdvancedHomeAutomationRoleTransferredIterator) Next() bool {
 }
 
 // Error returns any retrieval or parsing error occurred during filtering.
-func (it *AdvancedHomeAutomationRoleTransferredIterator) Error() error {
+func (it *AdvancedHomeAutomationRoomCreatedIterator) Error() error {
 	return it.fail
 }
 
 // Close terminates the iteration process, releasing any pending underlying
 // resources.
-func (it *AdvancedHomeAutomationRoleTransferredIterator) Close() error {
+func (it *AdvancedHomeAutomationRoomCreatedIterator) Close() error {
 	it.sub.Unsubscribe()
 	return nil
 }
 
-// AdvancedHomeAutomationRoleTransferred represents a RoleTransferred event raised by the AdvancedHomeAutomation contract.
-type AdvancedHomeAutomationRoleTransferred struct {
-	Role [32]byte
-	From common.Address
-	To   common.Address
-	Raw  types.Log // Blockchain specific contextual infos
+// AdvancedHomeAutomationRoomCreated represents a RoomCreated event raised by the AdvancedHomeAutomation contract.
+type AdvancedHomeAutomationRoomCreated struct {
+	RoomId *big.Int
+	Name   string
+	Raw    types.Log // Blockchain specific contextual infos
 }
 
-// FilterRoleTransferred is a free log retrieval operation binding the contract event 0x274dd4127a55dcb6f6c12ed38fec5007d965d2afffa8b0bc75c3dc8f3f6b2224.
+// FilterRoomCreated is a free log retrieval operation binding the contract event 0x37e1e413eec6f4b5fb3342770b4c3e7ad2b61d2300fe066b16ddb42eb3d9438b.
 //
-// Solidity: event RoleTransferred(bytes32 indexed role, address indexed from, address indexed to)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterRoleTransferred(opts *bind.FilterOpts, role [][32]byte, from []common.Address, to []common.Address) (*AdvancedHomeAutomationRoleTransferredIterator, error) {
+// Solidity: event RoomCreated(uint256 indexed roomId, string name)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterRoomCreated(opts *bind.FilterOpts, roomId []*big.Int) (*AdvancedHomeAutomationRoomCreatedIterator, error) {
 
-	var roleRule []interface{}
-	for _, roleItem := range role {
-		roleRule = append(roleRule, roleItem)
-	}
-	var fromRule []interface{}
-	for _, fromItem := range from {
-		fromRule = append(fromRule, fromItem)
-	}
-	var toRule []interface{}
-	for _, toItem := range to {
-		toRule = append(toRule, toItem)
+	var roomIdRule []interface{}
+	for _, roomIdItem := range roomId {
+		roomIdRule = append(roomIdRule, roomIdItem)
 	}
 
-	logs, sub, err := _AdvancedHomeAutomation.contract.FilterLogs(opts, "RoleTransferred", roleRule, fromRule, toRule)
+	logs, sub, err := _AdvancedHomeAutomation.contract.FilterLogs(opts, "RoomCreated", roomIdRule)
 	if err != nil {
 		return nil, err
 	}
-	return &AdvancedHomeAutomationRoleTransferredIterator{contract: _AdvancedHomeAutomation.contract, event: "RoleTransferred", logs: logs, sub: sub}, nil
+	return &AdvancedHomeAutomationRoomCreatedIterator{contract: _AdvancedHomeAutomation.contract, event: "RoomCreated", logs: logs, sub: sub}, nil
 }
 
-// WatchRoleTransferred is a free log subscription operation binding the contract event 0x274dd4127a55dcb6f6c12ed38fec5007d965d2afffa8b0bc75c3dc8f3f6b2224.
+// WatchRoomCreated is a free log subscription operation binding the contract event 0x37e1e413eec6f4b5fb3342770b4c3e7ad2b61d2300fe066b16ddb42eb3d9438b.
 //
-// Solidity: event RoleTransferred(bytes32 indexed role, address indexed from, address indexed to)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchRoleTransferred(opts *bind.WatchOpts, sink chan<- *AdvancedHomeAutomationRoleTransferred, role [][32]byte, from []common.Address, to []common.Address) (event.Subscription, error) {
+// Solidity: event RoomCreated(uint256 indexed roomId, string name)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchRoomCreated(opts *bind.WatchOpts, sink chan<- *AdvancedHomeAutomationRoomCreated, roomId []*big.Int) (event.Subscription, error) {
 
-	var roleRule []interface{}
-	for _, roleItem := range role {
-		roleRule = append(roleRule, roleItem)
-	}
-	var fromRule []interface{}
-	for _, fromItem := range from {
-		fromRule = append(fromRule, fromItem)
-	}
-	var toRule []interface{}
-	for _, toItem := range to {
-		toRule = append(toRule, toItem)
+	var roomIdRule []interface{}
+	for _, roomIdItem := range roomId {
+		roomIdRule = append(roomIdRule, roomIdItem)
 	}
 
-	logs, sub, err := _AdvancedHomeAutomation.contract.WatchLogs(opts, "RoleTransferred", roleRule, fromRule, toRule)
+	logs, sub, err := _AdvancedHomeAutomation.contract.WatchLogs(opts, "RoomCreated", roomIdRule)
 	if err != nil {
 		return nil, err
 	}
@@ -1452,8 +1527,8 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchRoleTransfer
 			select {
 			case log := <-logs:
 				// New log arrived, parse the event and forward to the user
-				event := new(AdvancedHomeAutomationRoleTransferred)
-				if err := _AdvancedHomeAutomation.contract.UnpackLog(event, "RoleTransferred", log); err != nil {
+				event := new(AdvancedHomeAutomationRoomCreated)
+				if err := _AdvancedHomeAutomation.contract.UnpackLog(event, "RoomCreated", log); err != nil {
 					return err
 				}
 				event.Raw = log
@@ -1474,12 +1549,12 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchRoleTransfer
 	}), nil
 }
 
-// ParseRoleTransferred is a log parse operation binding the contract event 0x274dd4127a55dcb6f6c12ed38fec5007d965d2afffa8b0bc75c3dc8f3f6b2224.
+// ParseRoomCreated is a log parse operation binding the contract event 0x37e1e413eec6f4b5fb3342770b4c3e7ad2b61d2300fe066b16ddb42eb3d9438b.
 //
-// Solidity: event RoleTransferred(bytes32 indexed role, address indexed from, address indexed to)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) ParseRoleTransferred(log types.Log) (*AdvancedHomeAutomationRoleTransferred, error) {
-	event := new(AdvancedHomeAutomationRoleTransferred)
-	if err := _AdvancedHomeAutomation.contract.UnpackLog(event, "RoleTransferred", log); err != nil {
+// Solidity: event RoomCreated(uint256 indexed roomId, string name)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) ParseRoomCreated(log types.Log) (*AdvancedHomeAutomationRoomCreated, error) {
+	event := new(AdvancedHomeAutomationRoomCreated)
+	if err := _AdvancedHomeAutomation.contract.UnpackLog(event, "RoomCreated", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log
@@ -1563,15 +1638,10 @@ type AdvancedHomeAutomationStateChanged struct {
 
 // FilterStateChanged is a free log retrieval operation binding the contract event 0x4e783b715efde58d097be2fe2f2e2bc0bb1df07fd682aeab1d8b4dc063ffdd9a.
 //
-// Solidity: event StateChanged(uint256 indexed roomId, uint256 deviceId, uint256 newValue)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterStateChanged(opts *bind.FilterOpts, roomId []*big.Int) (*AdvancedHomeAutomationStateChangedIterator, error) {
+// Solidity: event StateChanged(uint256 roomId, uint256 deviceId, uint256 newValue)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterStateChanged(opts *bind.FilterOpts) (*AdvancedHomeAutomationStateChangedIterator, error) {
 
-	var roomIdRule []interface{}
-	for _, roomIdItem := range roomId {
-		roomIdRule = append(roomIdRule, roomIdItem)
-	}
-
-	logs, sub, err := _AdvancedHomeAutomation.contract.FilterLogs(opts, "StateChanged", roomIdRule)
+	logs, sub, err := _AdvancedHomeAutomation.contract.FilterLogs(opts, "StateChanged")
 	if err != nil {
 		return nil, err
 	}
@@ -1580,15 +1650,10 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) FilterStateChange
 
 // WatchStateChanged is a free log subscription operation binding the contract event 0x4e783b715efde58d097be2fe2f2e2bc0bb1df07fd682aeab1d8b4dc063ffdd9a.
 //
-// Solidity: event StateChanged(uint256 indexed roomId, uint256 deviceId, uint256 newValue)
-func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchStateChanged(opts *bind.WatchOpts, sink chan<- *AdvancedHomeAutomationStateChanged, roomId []*big.Int) (event.Subscription, error) {
+// Solidity: event StateChanged(uint256 roomId, uint256 deviceId, uint256 newValue)
+func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchStateChanged(opts *bind.WatchOpts, sink chan<- *AdvancedHomeAutomationStateChanged) (event.Subscription, error) {
 
-	var roomIdRule []interface{}
-	for _, roomIdItem := range roomId {
-		roomIdRule = append(roomIdRule, roomIdItem)
-	}
-
-	logs, sub, err := _AdvancedHomeAutomation.contract.WatchLogs(opts, "StateChanged", roomIdRule)
+	logs, sub, err := _AdvancedHomeAutomation.contract.WatchLogs(opts, "StateChanged")
 	if err != nil {
 		return nil, err
 	}
@@ -1622,7 +1687,7 @@ func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) WatchStateChanged
 
 // ParseStateChanged is a log parse operation binding the contract event 0x4e783b715efde58d097be2fe2f2e2bc0bb1df07fd682aeab1d8b4dc063ffdd9a.
 //
-// Solidity: event StateChanged(uint256 indexed roomId, uint256 deviceId, uint256 newValue)
+// Solidity: event StateChanged(uint256 roomId, uint256 deviceId, uint256 newValue)
 func (_AdvancedHomeAutomation *AdvancedHomeAutomationFilterer) ParseStateChanged(log types.Log) (*AdvancedHomeAutomationStateChanged, error) {
 	event := new(AdvancedHomeAutomationStateChanged)
 	if err := _AdvancedHomeAutomation.contract.UnpackLog(event, "StateChanged", log); err != nil {
