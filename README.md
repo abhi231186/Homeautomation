@@ -92,7 +92,7 @@ Create a trustless, decentralized system where:
   - ABI encoding/decoding
   - Real-time block monitoring
 
-### **4. Hardware Layer** (Not in current code but implied)
+### **4. Hardware Layer** ()
 - **Devices:** ESP32, Arduino, Raspberry Pi
 - **Protocol:** MQTT
 - **Libraries:** PubSubClient (Arduino), paho-mqtt (Python)
